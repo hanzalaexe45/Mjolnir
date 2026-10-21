@@ -1,0 +1,17 @@
+name: Mjolnir
+version: '1.0.0'
+main: dev.smp.mjolnir.MjolnirPlugin
+api-version: '26.2'
+description: Thor's hammer Mjolnir - an undestructible, lightning-wielding mace for your SMP.
+commands:
+  mjolnir:
+    description: Mjolnir help and admin command
+    usage: /<command> <help|give|worthy|reload>
+    aliases: [mjol]
+permissions:
+  mjolnir.admin:
+    description: Use /mjolnir
+    default: op
+  mjolnir.worthy:
+    description: Judged worthy to lift Mjolnir
+    default: op
