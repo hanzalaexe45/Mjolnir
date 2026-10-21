@@ -1,0 +1,58 @@
+# ---------------- Mjolnir config ----------------
+
+# If true, every player is worthy. Default: only OPs, players with the
+# permission mjolnir.worthy, and players added with /mjolnir worthy add <name>.
+everyone-worthy: false
+worthy-players: []
+
+hammer:
+  attack-damage: 15.0      # melee damage per swing
+  attack-speed: 1.8
+
+# TRUE damage of one lightning strike. It ignores armor and Protection.
+# 11.0 = a 20 HP player (even in full Prot 4 netherite) dies in 2 strikes.
+# Players with golden-apple absorption or Health Boost need a 3rd strike.
+lightning-damage: 12.0
+
+# Fully charged melee hits also call down lightning
+melee-lightning:
+  enabled: true
+  cooldown-seconds: 1.5
+
+abilities:
+  throw:
+    cooldown: 1.0
+    range: 40.0
+    speed: 1.9
+    return-damage: 8.0
+  lightning:
+    cooldown: 2.0
+    range: 70.0
+    radius: 3.0
+  storm:
+    cooldown: 15.0
+    weather-seconds: 300
+    strike-seconds: 20
+    radius: 30.0
+    hits-players: true
+  flight:
+    cooldown: 5.0
+    duration-seconds: 5.0
+    speed: 1.6
+  god-blast:
+    cooldown: 50.0
+    radius: 15.0
+    damage: 30.0
+    health-cost: 6.0        # life force spent by the wielder (never kills)
+    break-blocks: false
+  force-field:
+    cooldown: 15.0
+    duration-seconds: 9.0
+    radius: 5.5
+  bifrost:
+    cooldown: 10.0
+    range: 120.0
+  detect:
+    cooldown: 10.0
+    radius: 100.0
+    glow-seconds: 10
